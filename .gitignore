@@ -1,0 +1,7 @@
+# Ignore machine specific secrets
+secrets.nix
+# Ignore generated files
+/result
+/build
+# Ignore VSCodium workspace settings
+.vscode/
