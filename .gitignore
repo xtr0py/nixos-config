@@ -1,3 +1,4 @@
+# Experimenting with gitignore
 # Ignore machine specific secrets
 secrets.nix
 hardware-configuration.nix
