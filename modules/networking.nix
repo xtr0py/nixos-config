@@ -8,8 +8,8 @@
     networkmanager.dns = "none";        # Prevent NetworkManager from managing /etc/resolv.conf
     resolvconf.enable = false;          # Disable resolvconf
     nameservers = [
-      "45.90.28.0"  # NextDNS Anycast IP
-      "45.90.30.0"  # NextDNS Anycast IP
+      "45.90.28.0"                      # NextDNS Anycast IP
+      "45.90.30.0"                      # NextDNS Anycast IP
     ];
   };
 
