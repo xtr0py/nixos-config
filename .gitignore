@@ -1,9 +1,10 @@
 # Experimenting with gitignore
 # Ignore machine specific secrets
 secrets.nix
-hardware-configuration.nix
 # Ignore generated files
 /result
 /build
 # Ignore VSCodium workspace settings
-.vscode/
+.vscode
+# Ignore specific modules
+/modules/citrix.nix

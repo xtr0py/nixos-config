@@ -5,12 +5,14 @@
   users.users.user = {
     isNormalUser = true;
     description = "user";
-    extraGroups = [ "networkmanager" "wheel" ];     
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "kvm" ];     
     packages = with pkgs; [
-      bleachbit brave citrix_workspace darktable dbeaver-bin flameshot
-      htop librewolf linphone networkmanagerapplet obsidian protonvpn-cli
-      protonvpn-gui spice spice-gtk teams-for-linux thunderbird vim virt-manager virt-viewer vscodium
-      whatsapp-for-linux zoom-us
+      bleachbit bluez blueman brave darktable dbeaver-bin flameshot
+      htop librewolf  networkmanagerapplet obsidian protonvpn-gui 
+      spice spice-gtk teams-for-linux thunderbird vim virt-manager virt-viewer vscodium
+      wasistlos zoom-us
+      #citrix_workspace_24_11_0
+      #linphonePackages.linphone-desktop      #package name changed need to test on rebuild
     ];
   };
   # Allow unfree packages
