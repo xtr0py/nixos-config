@@ -1,10 +1,35 @@
-# Experimenting with gitignore
-# Ignore machine specific secrets
+# --- Nix build outputs ---
+result
+result-*
+
+# --- direnv ---
+.direnv/
+.envrc
+
+# --- Secrets ---
 secrets.nix
-# Ignore generated files
-/result
-/build
-# Ignore VSCodium workspace settings
-.vscode
-# Ignore specific modules
+secrets/
+*.age
+*.gpg
+*.key
+*.pem
+
+# --- Local overrides ---
+local.nix
+local-*.nix
+
+# --- Editors ---
+.vscode/
+*~
+*.swp
+*.swo
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Excluded modules ---
 /modules/citrix.nix
