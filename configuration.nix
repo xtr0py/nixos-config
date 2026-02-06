@@ -22,7 +22,7 @@
 
   # System Packages
   environment.systemPackages = with pkgs; [
-    curl git wget
+    curl eza fd git ripgrep wget zoxide
   ];
  
   # NixOS Initial Installation Version
